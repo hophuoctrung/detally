@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <title>Detally App — Your Smart Debt Ally</title>
+    <meta name="description"
+        content="Track debts naturally with simple chat messages. No spreadsheets. No complicated forms. Offline-first debt tracking.">
+    <meta name="author" content="hophuoctrung">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Detally — Smart Debt Ally">
+    <meta property="og:description" content="Track debts naturally with simple chat messages. Offline-first.">
+    <meta property="og:image" content="./assets/detally.png">
+    <meta property="og:url" content="https://detally.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detally">
+    <meta name="twitter:description" content="Your Smart Debt Ally">
+    <meta name="twitter:image" content="./assets/detally.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip to main content - only visible on keyboard focus -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo-link" aria-label="Detally home">
+                <img src="./assets/logo-detally.png" alt="Detally logo — owl icon" class="logo-img" width="42"
+                    height="42">
+                <span class="site-title">Detally</span>
+            </a>
+
+            <!-- Desktop navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="hamburger"></span>
+                <span class="sr-only">Open menu</span>
+            </button>
+
+            <!-- <button class="cta-btn header-cta">Download App</button> -->
+            <a href="https://play.google.com/store/apps/details?id=com.trungho.detally&rdid=com.trungho.detally&feature=md&offerId" class="cta-btn header-cta">Download App</a>
+
+        </div>
+
+        <!-- Mobile navigation -->
+        <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge" aria-label="Key feature">Offline-first debt tracking</div>
+
+                    <h1 id="hero-title" class="hero-title">
+                        Just chat.
+                        <span>Detally handles the rest.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Track debts naturally with simple chat messages. No spreadsheets. No complicated forms. Clear
+                        records. Full control.
+                    </p>
+
+                    <div class="hero-actions">
+                        <!-- <button class="cta-btn" aria-label="Download Detally for free">Download Free</button> -->
+                        <a href="https://play.google.com/store/apps/details?id=com.trungho.detally&rdid=com.trungho.detally&feature=md&offerId" class="cta-btn">Download Free</a>
+                        <button class="cta-btn secondary-btn" aria-label="View all features">View Features</button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <h3>100%</h3>
+                            <p>Offline-first</p>
+                        </div>
+                        <div>
+                            <h3>0</h3>
+                            <p>Complex forms</p>
+                        </div>
+                        <div>
+                            <h3>Fast</h3>
+                            <p>Chat-style input</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-preview">
+                    <div class="preview-wrapper">
+                        <img src="./assets/detally-preview.png"
+                            alt="Detally app interface showing chat-style debt tracking" width="560" height="520"
+                            loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Strip -->
+        <section class="brand-strip" aria-label="Brand values">
+            <div class="container">
+                <p>Designed for clarity</p>
+                <p>Built for modern debt tracking</p>
+                <p>Simple by default</p>
+                <p>Reliable daily workflow</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section" aria-labelledby="features-title">
+            <div class="container">
+                <p class="section-label">Features</p>
+                <h2 id="features-title" class="section-title">Debt tracking that feels natural.</h2>
+                <p class="section-description">Detally removes friction from financial tracking. Just type what happened
+                    and keep moving.</p>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">💬</div>
+                        <h3>Just Chat</h3>
+                        <p>Record debts instantly using natural messages.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📄</div>
+                        <h3>Clear Records</h3>
+                        <p>Know exactly who owes what at any time.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">⚠️</div>
+                        <h3>Safe Limits</h3>
+                        <p>Get awareness before debts grow too large.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">💾</div>
+                        <h3>Offline First</h3>
+                        <p>Your data stays on your device.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Owee Assistant Section -->
+        <section class="section" aria-labelledby="owee-title">
+            <div class="container">
+                <div class="owee-grid">
+                    <div class="owee-image">
+                        <img src="./assets/owee-detally-owl.png" alt="Owee the owl — Detally's calm financial assistant"
+                            width="420" height="420" loading="lazy">
+                    </div>
+
+                    <div class="owee-content">
+                        <p class="section-label">Meet Owee</p>
+                        <h2 id="owee-title" class="section-title">A calm companion for your financial clarity.</h2>
+                        <p class="section-description">Owee represents awareness, simplicity, and reliability. Instead
+                            of making finance stressful, Detally helps you stay informed without overwhelming you.</p>
+
+                        <div class="quote-list">
+                            <blockquote class="quote-card">
+                                <p>“Track clearly. Owe wisely.”</p>
+                            </blockquote>
+                            <blockquote class="quote-card">
+                                <p>“Simple. Reliable. Built for clarity.”</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials-section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="testimonials-header">
+                    <div>
+                        <p class="section-label">Testimonials</p>
+                        <h2 id="testimonials-title" class="section-title">People want simpler finance tools.</h2>
+                    </div>
+                    <p class="section-description">Designed for people who are tired of spreadsheets, forgotten debts,
+                        and messy manual tracking.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <blockquote>
+                            <p>“I stopped using spreadsheets completely. Detally feels faster and much less stressful.”
+                            </p>
+                            <footer>
+                                <cite>Linh Tran</cite>
+                                <span class="testimonial-role">Freelancer</span>
+                            </footer>
+                        </blockquote>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <blockquote>
+                            <p>“The chat-style input is genius. I can record debts in seconds during meetings.”</p>
+                            <footer>
+                                <cite>Marcus Lee</cite>
+                                <span class="testimonial-role">Startup Founder</span>
+                            </footer>
+                        </blockquote>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <blockquote>
+                            <p>“Simple, clear, and reliable. Exactly what small daily debt tracking needed.”</p>
+                            <footer>
+                                <cite>Huy Nguyen</cite>
+                                <span class="testimonial-role">Coffee Shop Owner</span>
+                            </footer>
+                        </blockquote>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press Mentions Section -->
+        <!-- Press Mentions Section -->
+        <section class="section press-section" aria-labelledby="press-title">
+            <div class="container">
+                <div class="press-inner">
+
+                    <!-- Cột 1: Header -->
+                    <div class="press-header">
+                        <p class="section-label">Press Mentions</p>
+                        <h2 id="press-title" class="section-title">
+                            Built for a new generation of lightweight finance tools.
+                        </h2>
+                    </div>
+
+                    <!-- Cột 2+3: Grid 2 card -->
+                    <div class="press-grid">
+                        <article class="press-card">
+                            <blockquote>
+                                <p>“Minimal finance experience with a surprisingly natural workflow.”</p>
+                            </blockquote>
+                        </article>
+                        <article class="press-card">
+                            <blockquote>
+                                <p>“Detally feels closer to messaging than accounting software.”</p>
+                            </blockquote>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section" aria-labelledby="pricing-title">
+            <div class="container">
+                <p class="section-label">Pricing</p>
+                <h2 id="pricing-title" class="section-title">Start free. Grow when ready.</h2>
+
+                <div class="pricing-grid">
+                    <article class="price-card featured" aria-labelledby="plan-g1-title">
+                        <div class="price-header">
+                            <h3 id="plan-g1-title" class="price-title">G1 — Grow</h3>
+                            <p class="price-subtitle">Current public release</p>
+                            <p class="price-value" aria-label="Price: Free">Free</p>
+                        </div>
+
+                        <h4 class="sr-only">Features included in G1 Grow:</h4>
+                        <ul class="price-features">
+                            <li>Local only</li>
+                            <li>No cloud sync</li>
+                            <li>Unlimited tracking</li>
+                        </ul>
+
+                        <button class="cta-btn" aria-label="Get started with G1 Grow for free">Get Started</button>
+                    </article>
+
+                    <article class="price-card" aria-labelledby="plan-g2-title">
+                        <div class="price-header">
+                            <h3 id="plan-g2-title" class="price-title">G2 — Go</h3>
+                            <p class="price-subtitle">Built for teams and faster workflows</p>
+                            <p class="price-value coming-soon" aria-label="Coming soon">Soon</p>
+                        </div>
+
+                        <h4 class="sr-only">Features included in G2 Go:</h4>
+                        <ul class="price-features">
+                            <li>Private cloud sync</li>
+                            <li>Up to 3 devices</li>
+                            <li>1 GB attachments</li>
+                        </ul>
+
+                        <button class="cta-btn secondary-btn" disabled
+                            aria-label="Early cloud access for founding members">Founding Access</button>
+                    </article>
+
+                    <article class="price-card" aria-labelledby="plan-g3-title">
+                        <div class="price-header">
+                            <h3 id="plan-g3-title" class="price-title">G3 — Global</h3>
+                            <p class="price-subtitle">Designed for full-scale financial coordination</p>
+                            <p class="price-value coming-soon" aria-label="Coming in future">Future</p>
+                        </div>
+
+                        <h4 class="sr-only">Features included in G3 Global:</h4>
+                        <ul class="price-features">
+                            <li>Collaborative workspace</li>
+                            <li>Unlimited devices</li>
+                            <li>5 GB+ storage</li>
+                        </ul>
+
+                        <button class="cta-btn secondary-btn" disabled aria-label="Coming soon">Coming Soon</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Journal Section -->
+        <section id="blog" class="section" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="blog-header">
+                    <div>
+                        <p class="section-label">Journal</p>
+                        <h2 id="blog-title" class="section-title">Thoughts on clarity, debt, and modern finance.</h2>
+                    </div>
+                    <a href="/blog" class="view-all-link" aria-label="View all blog posts">View all posts →</a>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-category" aria-label="Category">Awareness</div>
+                        <h3 class="blog-title">Why small debts become big problems</h3>
+                        <p class="blog-description">Tiny forgotten transactions create silent stress over time.
+                            Financial clarity starts with visibility.</p>
+                        <a href="/blog/small-debts-big-problems" class="blog-link"
+                            aria-label="Read article: Why small debts become big problems">Read more →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-category" aria-label="Category">Product</div>
+                        <h3 class="blog-title">Why chat-based finance feels natural</h3>
+                        <p class="blog-description">People already explain money through conversation. Detally simply
+                            turns that behavior into structure.</p>
+                        <a href="/blog/chat-based-finance" class="blog-link"
+                            aria-label="Read article: Why chat-based finance feels natural">Read more →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-category" aria-label="Category">Privacy</div>
+                        <h3 class="blog-title">Offline-first personal finance matters</h3>
+                        <p class="blog-description">Not every finance app needs cloud sync. Privacy and speed still
+                            matter deeply.</p>
+                        <a href="/blog/offline-first-matters" class="blog-link"
+                            aria-label="Read article: Offline-first personal finance matters">Read more →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-category" aria-label="Category">Psychology</div>
+                        <h3 class="blog-title">Messy money creates hidden anxiety</h3>
+                        <p class="blog-description">Clear records reduce misunderstandings, tension, and unnecessary
+                            mental load.</p>
+                        <a href="/blog/messy-money-anxiety" class="blog-link"
+                            aria-label="Read article: Messy money creates hidden anxiety">Read more →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section" aria-labelledby="faq-title">
+            <div class="container container-sm">
+                <div class="faq-header">
+                    <p class="section-label">FAQ</p>
+                    <h2 id="faq-title" class="section-title">Questions people usually ask.</h2>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>How does Detally work?</summary>
+                        <p>Simply type natural messages like <code>@John owe 500$</code> or
+                            <code>@Anna paid 200$</code>. Detally automatically records and organizes everything for
+                            you.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Does Detally require an account?</summary>
+                        <p>No. The current G1 – Grow release works offline-first and stores your data locally on your
+                            device.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is my data uploaded to the cloud?</summary>
+                        <p>Not in the current release. G1 – Grow keeps your records local for simplicity and privacy.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Who is Detally for?</summary>
+                        <p>Friends splitting bills, roommates, freelancers, small shops, teams, or anyone tired of messy
+                            debt notes.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist Section -->
+        <section class="section waitlist-section" aria-labelledby="waitlist-title">
+            <div class="container container-sm">
+                <div class="waitlist-card">
+                    <div class="waitlist-content">
+                        <p class="section-label">Early Access</p>
+                        <h2 id="waitlist-title" class="section-title">Stay updated with Detally.</h2>
+                        <p class="section-description">Join the waitlist for future releases, blog updates, cloud sync,
+                            and AI-powered finance features.</p>
+                    </div>
+
+                    <form id="waitlist-form" class="waitlist-form" method="POST" data-validate>
+                        <div class="form-group">
+                            <label for="waitlist-email" class="sr-only">Email address</label>
+                            <input type="email" id="waitlist-email" name="email" placeholder="Enter your email" required
+                                aria-required="true">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="cta-btn" aria-label="Join waitlist">Join Waitlist</button>
+                    </form>
+                    <p class="waitlist-note" aria-label="Privacy note">No spam. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="./assets/logo-detally.png" alt="Detally logo" width="44" height="44" loading="lazy">
+                <h2 class="footer-title">Detally</h2>
+                <p>Track clearly. Owe wisely.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

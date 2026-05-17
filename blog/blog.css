@@ -273,6 +273,72 @@
   display: inline-block;
 }
 
+/* ========== RELATED POSTS ========== */
+.related-posts {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.related-posts h3 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mobile: 1 cột */
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.related-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  padding: 1rem;
+  text-decoration: none;
+  transition:
+    transform 0.25s,
+    border-color 0.25s;
+  display: block;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.related-category {
+  color: var(--green-light);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.related-card h4 {
+  color: var(--text);
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.related-card:hover h4 {
+  color: var(--green-light);
+}
+
+/* Mobile: ẩn excerpt */
+.related-excerpt {
+  display: none;
+}
+
 /* Post footer - mobile */
 .post-footer {
   margin-top: 2rem;
@@ -328,6 +394,46 @@
 .pagination a:hover {
   border-color: var(--green);
   color: var(--green-light);
+}
+
+/* ========== TABLET (≥640px) ========== */
+@media (min-width: 640px) {
+  .related-posts {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .related-posts h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .related-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .related-category {
+    font-size: 0.7rem;
+  }
+
+  .related-card h4 {
+    font-size: 1rem;
+  }
+
+  /* Tablet: hiện excerpt */
+  .related-excerpt {
+    display: block;
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
 }
 
 /* ========== TABLET (≥768px) ========== */
@@ -460,6 +566,27 @@
 
   .post-header h1 {
     font-size: 3rem;
+  }
+
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  .related-grid {
+    gap: 1.5rem;
+  }
+
+  .related-card {
+    padding: 1.5rem;
+  }
+
+  .related-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .related-excerpt {
+    font-size: 0.8rem;
   }
 }
 

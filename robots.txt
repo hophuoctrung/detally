@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://detally.app/sitemap.xml

@@ -18,20 +18,23 @@
     <meta property="og:title" content="Messy money creates hidden anxiety">
     <meta property="og:description"
         content="Clear records reduce misunderstandings, tension, and unnecessary mental load.">
-    <meta property="og:image" content="/assets/detally.png">
-    <meta property="og:url" content="https://detally.app/blog/messy-money-creates-hidden-anxiety.html">
+    <meta property="og:image" content="/assets/blog/anxiety-brain-illustration-1200.webp">
+    <meta property="og:url" content="https://detally.app/blog/messy-money-creates-hidden-anxiety">
     <meta property="og:type" content="article">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Messy money creates hidden anxiety">
     <meta name="twitter:description"
         content="Clear records reduce misunderstandings, tension, and unnecessary mental load.">
-    <meta name="twitter:image" content="/assets/detally.png">
+    <meta name="twitter:image" content="/assets/blog/anxiety-brain-illustration-1200.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/blog/blog.css">
+
+    <!-- seo canonical -->
+    <link rel="canonical" href="https://detally.app/blog/messy-money-creates-hidden-anxiety">
 </head>
 
 <body>
@@ -41,7 +44,7 @@
     <header class="site-header">
         <div class="container header-inner">
             <a href="/" class="logo-link" aria-label="Detally home">
-                <img src="/assets/logo-detally.png" alt="Detally logo" class="logo-img" width="42" height="42">
+                <img src="/assets/logo-detally.webp" alt="Detally logo" class="logo-img" width="42" height="42">
                 <span class="site-title">Detally</span>
             </a>
             <nav class="main-nav" aria-label="Main navigation">
@@ -102,7 +105,7 @@
 
                     <p>And it's far more expensive than you think.</p>
 
-                    <img src="/assets/blog/anxiety-brain-illustration.png" alt="Brain tangled with financial worries"
+                    <img src="/assets/blog/anxiety-brain-illustration-1200.webp" alt="Brain tangled with financial worries"
                         loading="lazy" onerror="this.style.display='none'">
 
                     <h2>The psychology of financial ambiguity</h2>
@@ -176,7 +179,7 @@
                     <p>This isn't a personal failing. It's a <strong>cognitive limitation</strong> that affects
                         everyone. The solution isn't to "try harder" — it's to use external systems.</p>
 
-                    <img src="/assets/blog/brain-vs-system-illustration.png"
+                    <img src="/assets/blog/brain-vs-system-illustration-1200.webp"
                         alt="Human brain vs external system comparison" loading="lazy"
                         onerror="this.style.display='none'">
 
@@ -244,7 +247,8 @@
                     <h2>How to start (today, in 5 minutes)</h2>
 
                     <p>You don't need a complex system. You don't need to become a spreadsheet expert. You just need
-                        <strong>one simple habit</strong>:</p>
+                        <strong>one simple habit</strong>:
+                    </p>
 
                     <p><strong>Record every debt immediately — in whatever way is easiest.</strong></p>
 
@@ -270,9 +274,13 @@
                         <li><strong>Close resolved debts</strong> — mark them paid and feel the satisfaction of closure
                         </li>
                     </ol>
-
-                    <img src="/assets/detally-preview.png" alt="Detally app making debt tracking simple and clear"
-                        loading="lazy" onerror="this.style.display='none'">
+                    
+                    <img src="/assets/detally-preview-800.webp"
+                         srcset="/assets/detally-preview-400.webp 400w,
+                                 /assets/detally-preview-800.webp 800w,
+                                 /assets/detally-preview-1200.webp 1200w"
+                         alt="Detally app making debt tracking simple and clear"
+                         loading="lazy" onerror="this.style.display='none'">
 
                     <h2>Why Detally exists</h2>
 
@@ -319,13 +327,30 @@
                 </div>
             </div>
         </article>
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <h3>📖 You might also like</h3>
+            <div class="related-grid">
+                <a href="/blog/why-small-debts-become-big-problems" class="related-card">
+                    <span class="related-category">Awareness</span>
+                    <h4>Why small debts become big problems</h4>
+                    <p class="related-excerpt">Tiny forgotten transactions create silent stress over time.</p>
+                </a>
+                <a href="/blog/offline-first-personal-finance-matters" class="related-card">
+                    <span class="related-category">Privacy</span>
+                    <h4>Offline-first personal finance matters</h4>
+                    <p class="related-excerpt">Not every finance app needs cloud sync. Privacy and speed still matter
+                        deeply.</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
             <div class="footer-brand">
-                <img src="/assets/logo-detally.png" alt="Detally logo" width="44" height="44" loading="lazy">
+                <img src="/assets/logo-detally.webp" alt="Detally logo" width="44" height="44" loading="lazy">
                 <h3 class="footer-title">Detally</h3>
                 <p>Track clearly. Owe wisely.</p>
             </div>
@@ -338,7 +363,7 @@
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>
